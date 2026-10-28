@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Profile Page</title>
+</head>
+<body>
+    <!--Header-->
+    <header>
+        <h1>Personal Profile Page</h1>
+    </header>
+
+    <!--Navigation-->
+    <nav>
+        <a href="#about">About Me</a> |
+        <a href="#Contact">Contact</a>
+    </nav>
+
+    <!--Section-->
+    <section id="about">
+        <!--Article-->
+        <article>
+            <h2>Academic Background</h2>
+            <p>Below is overview of my currenct academic details.</p>
+
+            <!--table requirement-->
+            <table border="1">
+                <tr>
+                    <th>Name</th>
+                    <th>Field of Study</th>
+                    <th>Faculty</th>
+                </tr>
+                <tr>
+                    <td>Ammar Hasreen </td>
+                    <td>Software Engineering</td>
+                    <td>FSKM</td>
+                </tr>
+            </table>
+        </article>
+    </section>
+
+    <section id="contact">
+        <article>
+            <h2>Connect with me!</h2>
+            <p>Please fill out the form below to share your information: </p>
+
+            <!--Form Requirement-->
+            <form action="submit_form.php" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+
+               <lable>Gender:</lable>
+               <input type="radio" id="male" name="gender" value="male">
+               <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label><br><br>
+
+                <label>Favourite Hobbies:</label><br>
+                <input type="checkbox" id="reading" name="hobbies" value="Valorant">
+                <label for="reading">Valorant</label><br>
+                <input type="checkbox" id="sports" name="hobbies" value="Graphics Design">
+                <label for="sports">Graphics Design</label><br>
+                <input type="checkbox" id="music" name="hobbies" value="Music">
+                <label for="music">Music</label><br>
+
+                <input type="submit" value="Submit">
+            </form>
+        </article>
+    </section>
+
+    <!--Footer-->
+    <footer>
+        <p>&copy; 2023 Personal Profile Page. All rights reserved.</p>
+    </footer>
+</body>
+</html>

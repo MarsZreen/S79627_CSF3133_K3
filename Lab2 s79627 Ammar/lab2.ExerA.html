@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fakulty Event Page</title>
+</head>
+<body>
+    <header>
+        <h1>FSKM Java Bootcamp 2026</h1>
+        <p>Level up your programming skills!</p>
+    </header>
+    <!--Navigation-->
+    <nav>
+        <a href="#about">About the Event</a> |
+        <a href="#events">Events schedule </a> |
+        <a href="#register">reregistration</a>
+    </nav>
+
+    <!--Article-->
+    <section id="about">
+        <article>
+            <h2>About the Event</h2>
+            <p>The FSKM Java Bootcamp 2026 is a comprehensive training program designed to equip participants with the skills and knowledge needed to excel in Java programming. This bootcamp is ideal for beginners as well as those looking to enhance their existing skills.</p>
+        </article>
+        <article>
+            <h3>Activities: Coding Challenges</h3>
+            <p>Participants will engage in hands-on coding challenges that simulate real-world scenarios. These challenges are designed to test problem-solving abilities and coding proficiency.</p>
+        </article>
+        </section>
+
+        <!--Schedule section-->
+        <section id="events">
+            <h2>Event Schedule</h2>
+            <table border="1">
+                <tr>
+                    <th>Date</th>
+                    <th>Time</th>
+                    <th>Activity</th>
+                </tr>
+                <tr>
+                    <td>2023-10-01</td>
+                    <td>09:00 AM - 12:00 PM</td>
+                    <td>Introduction to Java</td>
+                </tr>
+                <tr>
+                    <td>2023-10-08</td>
+                    <td>09:00 AM - 12:00 PM</td>
+                    <td>Object-Oriented Programming</td>
+                </tr>
+            </table>
+       
+       <!--Resgistration Form-->
+        </section>
+        <section id="register">
+            <h2>Registration Form</h2>
+            <form action="submit_registration.php" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone"><br><br>
+
+                <input type="submit" value="Register">
+            </form>
+        </section>
+
+        <footer>
+            <p>&copy; 2026 FSKM Java Bootcamp. All rights reserved.</p>
+            </footer>
+
+
+</body>
+</html>
