@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Interactive Contact Form</title>
+</head>
+<body>
+
+<!-- Header Section -->
+<div>
+  <h1>Interactive Contact Form</h1>
+  <span><em>We value your feedback and inquiries.</em></span>
+</div>
+
+<hr>
+
+<!-- Content Section -->
+<div>
+  <h2>Contact Details</h2>
+  <form action="">
+    Email: <input type="email" name="useremail" required><br><br>
+    
+    Preferred Contact Date: <input type="date" name="contactdate"><br><br>
+    
+    Satisfaction Level (1-10): <input type="range" min="1" max="10" value="5" name="satisfaction"><br><br>
+    
+    <input type="submit" value="Submit">
+  </form>
+
+  <br>
+
+  <!-- Inline Calculator -->
+  <div>
+    <h2>Simple Addition Calculator</h2>
+    <form oninput="total.value=parseInt(val1.value)+parseInt(val2.value)">
+      <input id="val1" type="number" value="0"> +
+      <input id="val2" type="number" value="0"> =
+      <output name="total" for="val1 val2">0</output>
+    </form>
+  </div>
+</div>
+
+<hr>
+
+<!-- Footer Section -->
+<div>
+  <p>Contact us at: support@example.com</p>
+  <p>&copy; 2026 My Web Page</p>
+</div>
+
+</body>
+</html>

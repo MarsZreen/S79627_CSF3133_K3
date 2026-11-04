@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Campus Bakery</title>
+</head>
+<body>
+<!-- Header Section -->
+<div id="header">
+    <h1>CampusBake <span>Freshly baked daily!</span></h1>
+</div>
+
+<!-- Navigation Section -->
+<div id="nav">
+    <a href="#home">Home</a> | <a href="#menu">Menu</a> | <a href="#order">Order</a>
+</div>
+
+<!-- Sidebar Section -->
+<div id="sidebar">
+    <h2>Price List</h2>
+    <ul>
+        <li>Cupcakes: RM 3.00</li>
+        <li>Cake Slices: RM 5.00</li>
+    </ul>
+    <p>Promo: Orders &gt; 10 pieces get a free drink!</p>
+</div>
+
+<!-- Content Section -->
+<div id="content">
+    <p>Welcome to <strong>CampusBake&reg;</strong>! We offer the <em>best</em> treats on campus. <span style="color:red;">Order now</span> and visit our <a href="#nav">navigation menu</a>.</p>
+    
+    <h2>Online Order Form</h2>
+    <!-- Form Section -->
+    <div>
+        <form oninput="total.value = (parseInt(cupcakes.value) * 3) + (parseInt(slices.value) * 5)">
+            <label>Name:</label>
+            <input type="text" name="name" placeholder="Enter your name" required autofocus><br>
+            
+            <label>Phone:</label>
+            <input type="tel" name="phone" required><br>
+            
+            <label>Email:</label>
+            <input type="email" name="email" required><br>
+            
+            <label>Pick-up Date:</label>
+            <input type="date" name="date"><br>
+            
+            <label>Pick-up Time:</label>
+            <input type="time" name="time"><br>
+            
+            <label>Flavour:</label>
+            <input list="flavours" name="flavour">
+            <datalist id="flavours">
+                <option value="Vanilla">
+                <option value="Chocolate">
+                <option value="Red Velvet">
+                <option value="Matcha">
+            </datalist><br>
+            
+            <label>Icing Colour:</label>
+            <input type="color" name="color"><br>
+            
+            <label>Sweetness Level:</label>
+            <input type="range" name="sweetness" min="1" max="5" step="1"><br>
+            
+            <label>Cupcakes (RM 3.00):</label>
+            <input type="number" id="cupcakes" name="cupcakes" min="0" value="0"><br>
+            
+            <label>Cake Slices (RM 5.00):</label>
+            <input type="number" id="slices" name="slices" min="0" value="0"><br>
+            
+            Total Price: RM <output name="total" for="cupcakes slices">0</output><br>
+            
+            <input type="submit" value="Place Order">
+        </form>
+    </div>
+</div>
+
+<!-- Footer Section -->
+<div id="footer">
+    <p>&copy; 2026 CampusBake&reg;. All rights reserved. &nbsp; Prices in &pound; / &euro; equivalent not accepted.</p>
+</div>
+
+<!-- 
+Testing Observations:
+1. Clicking Submit with all fields empty stops submission and displays a browser warning to fill out the "Name" field because of the 'required' attribute. 
+2. Entering "myemail" into the e-mail field and submitting displays a warning that the input is invalid because it is missing the '@' symbol required for the 'email' input type.
+-->
+</body>
+</html>
