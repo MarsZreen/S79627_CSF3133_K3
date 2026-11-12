@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <!-- Extended: Added viewport meta tag for responsiveness -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>e-Café Campus</title>
+    
+    <!-- Extended: Linked external style sheet -->
+    <link rel="stylesheet" href="cafe.css">
+    
+    <style type="text/css">
+        /* Internal styles retained from original code (corrected) */
+        h1 {
+            text-decoration: overline;
+        }
+        
+        p {
+            color: #333333; 
+            text-align: justify;
+        }
+        
+        .intro {
+            font-size: 18px;
+            background-color: #FDEBD0;
+        }
+        
+        .highlight {
+            font-weight: bold;
+            color: #C0392B;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 
+    List of Corrected Errors:
+    Error 1 (Line 7): HTML comment syntax (<!--) was used inside the CSS block.
+    Error 2 (Line 9): 'list-style-type: no;' is invalid. Changed to 'none'.
+    Error 3 (Lines 14-15): a:hover was declared before a:visited. Reordered to L-V-H-A.
+    Error 4 (Line 17): 'text-decoration: overlined;' is invalid. Changed to 'overline'.
+    Error 5 (Line 19): Missing colon after the color property ('color #333333;').
+    Error 6 (Line 22): Missing closing brace '}' for the #intro CSS rule.
+    Error 7 (Line 23): The class selector 'highlight' was missing the period prefix ('.highlight').
+    Error 8 (Line 35): The anchor link href="menu" was missing the '#' symbol for an ID link.
+    Error 9 (Line 42 & 20): HTML used class="intro" but CSS used an ID selector #intro.
+    Error 10 (Line 43 & 47): id="item" was used twice. IDs must be unique, changed to class="item".
+    Error 11 (Line 54): <video> tag was missing the 'controls' attribute so it couldn't be played.
+    Error 12 (Line 55): type="mp4" is invalid. Changed to type="video/mp4".
+    -->
+
+    <header>
+        <h1>e-Café Campus</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#video">Video</a></li>
+            <!-- Extended: Added link to the new feedback section -->
+            <li><a href="#feedback">Feedback</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="menu">
+        <h2>Today's Menu</h2>
+        <p class="intro">Freshly brewed coffee and local delights every day.</p>
+        
+        <article class="item">
+            <h3>Kopi Tarik</h3>
+            <!-- Extended: Added old price promotion -->
+            <p><span class="old-price">RM 4.50</span> Only <span class="highlight">RM 3.50</span></p>
+        </article>
+        
+        <article class="item">
+            <h3>Nasi Lemak</h3>
+            <!-- Extended: Added old price promotion -->
+            <p><span class="old-price">RM 6.50</span> Only <span class="highlight">RM 5.00</span></p>
+        </article>
+    </section>
+
+    <section id="video">
+        <h2>Watch Our Story</h2>
+        <!-- Extended: Added figure, figcaption, and controls -->
+        <figure>
+            <video controls>
+                <source src="cafe.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <figcaption>Experience the vibe at e-Café Campus.</figcaption>
+        </figure>
+    </section>
+
+    <!-- Extended: New Feedback Form Section -->
+    <section id="feedback">
+        <h2>Customer Feedback</h2>
+        <form action="#" method="post" class="feedback-form">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="email">E-mail:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <p>Visit Type:</p>
+            <input type="radio" id="dine-in" name="visit" value="dine-in" required>
+            <label for="dine-in">Dine-in</label><br>
+            <input type="radio" id="take-away" name="visit" value="take-away">
+            <label for="take-away">Take-away</label><br><br>
+
+            <p>Favourite Items:</p>
+            <input type="checkbox" id="fav-coffee" name="fav" value="coffee">
+            <label for="fav-coffee">Kopi Tarik</label><br>
+            <input type="checkbox" id="fav-nasi" name="fav" value="nasi-lemak">
+            <label for="fav-nasi">Nasi Lemak</label><br>
+            <input type="checkbox" id="fav-pastry" name="fav" value="pastries">
+            <label for="fav-pastry">Pastries</label><br><br>
+
+            <button type="submit">Submit Feedback</button>
+        </form>
+    </section>
+
+    <footer id="contact">
+        <p>&copy; 2026 e-Café Campus</p>
+        <!-- Extended: Added address and mailto link -->
+        <address>
+            Email us at: <a href="mailto:contact@ecafe.umt.edu.my">contact@ecafe.umt.edu.my</a>
+        </address>
+    </footer>
+
+</body>
+</html>
