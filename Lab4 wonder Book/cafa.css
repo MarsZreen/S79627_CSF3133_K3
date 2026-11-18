@@ -1,0 +1,103 @@
+/* --- Navigation Bar Styles (Extracted & Extended) --- */
+nav {
+    background-color: #f1f1f1;
+    padding: 10px;
+}
+
+ul {
+    list-style-type: none; /* Corrected from 'no' */
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+ul li {
+    display: inline-block; /* Extended: display as block/inline-block */
+    margin-right: 15px;
+}
+
+ul li a {
+    display: block;
+    padding: 10px 20px;
+    background-color: #34495e;
+    text-decoration: none; /* Extended: text-decoration none */
+    text-transform: uppercase; /* Extended: text-transform uppercase */
+    border-radius: 5px;
+}
+
+/* --- Global Link States (Corrected L-V-H-A Order) --- */
+a:link { color: #1A5276; }
+a:visited { color: #7D3C98; }
+
+/* Overriding global link colors specifically for the navigation buttons */
+ul li a:link, ul li a:visited {
+    color: white; 
+}
+
+ul li a:hover {
+    background-color: #E67E22; /* Extended: different background on hover */
+    color: white;
+}
+
+a:hover { color: #E67E22; }
+a:active { color: #C0392B; }
+
+/* --- Extended Elements --- */
+
+/* Promotion Pricing */
+.old-price {
+    text-decoration: line-through;
+    color: #95a5a6;
+    font-size: 0.9em;
+    margin-right: 8px;
+}
+
+/* Responsive Video Setup */
+video {
+    max-width: 100%;
+    height: auto;
+}
+
+figure {
+    margin: 0;
+    text-align: center;
+}
+
+figcaption {
+    font-style: italic;
+    color: #7f8c8d;
+    margin-top: 5px;
+}
+
+/* Feedback Form Styling */
+.feedback-form {
+    background-color: #FDEBD0;
+    padding: 20px;
+    border: 1px solid #d35400;
+    border-radius: 8px;
+    max-width: 500px;
+}
+
+.feedback-form input[type="text"],
+.feedback-form input[type="email"] {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.feedback-form button {
+    background-color: #C0392B;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.feedback-form button:hover {
+    background-color: #E67E22;
+}
