@@ -7,34 +7,53 @@
     <style>
         body { font-family: Arial, sans-serif; padding: 40px; line-height: 1.6; background-color: #f4f4f9;}
         .container { max-width: 600px; margin: auto; background: white; padding: 30px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
-        h1 { border-bottom: 2px solid #eaecef; padding-bottom: 10px; text-align: center; }
+        h1 { border-bottom: 2px solid #eaecef; padding-bottom: 10px; text-align: center; color: #333; }
         ul { list-style-type: none; padding: 0; }
-        li { margin: 15px 0; }
-        a { display: block; padding: 15px; text-decoration: none; color: white; background-color: #0366d6; font-weight: bold; font-size: 18px; border-radius: 6px; text-align: center; transition: background 0.3s;}
-        a:hover { background-color: #0056b3; }
+        li { margin: 10px 0; padding-bottom: 15px; border-bottom: 1px dashed #eee; }
+        li:last-child { border-bottom: none; }
+        
+        /* Style for the main lab buttons */
+        .main-link { display: block; padding: 12px; text-decoration: none; color: white; background-color: #0366d6; font-weight: bold; font-size: 16px; border-radius: 6px; text-align: center; transition: background 0.3s; margin-top: 15px;}
+        .main-link:hover { background-color: #0056b3; }
+        
+        /* Style for the smaller exercise links underneath */
+        .sub-link { display: block; padding: 8px 12px; text-decoration: none; color: #0366d6; background-color: #e1ecf8; font-size: 14px; border-radius: 6px; text-align: center; transition: background 0.3s; margin-top: 8px; margin-left: 20px; margin-right: 20px;}
+        .sub-link:hover { background-color: #c8def4; }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>CSF3133 Assignments</h1>
-        <p style="text-align: center;">Click a link below to view the lab output:</p>
+        <p style="text-align: center; color: #666;">Click a link below to view the lab output:</p>
         
-      <ul>
-    <!-- Example: Pointing directly to the specific HTML file inside the folder -->
-   <!-- Lab 5 Section -->
+        <ul>
+            <!-- Lab 1 Section -->
+            <li>
+                <a class="main-link" href="Lab 1 web design/Lab 1.html">Lab 1 Web Design</a>
+                <a class="sub-link" href="Lab 1 web design/Lab1Woonderbook.html">Lab 1 - Wonderbook</a>
+            </li>
+            
+            <!-- Lab 2 Section -->
+            <li>
+                <a class="main-link" href="Lab2 s79627 Ammar/Lab2 S79627.html">Lab 2 Main</a>
+                <a class="sub-link" href="Lab2 s79627 Ammar/lab2.ExerA.html">Lab 2 - Exercise A</a>
+                <a class="sub-link" href="Lab2 s79627 Ammar/lab2_ExerB.html">Lab 2 - Exercise B</a>
+            </li>
+            
+            <!-- Lab 3 Section -->
+            <li>
+                <a class="main-link" href="LAB 3/Lab3Exer.html">Lab 3</a>
+            </li>
+            
+            <!-- Lab 4 Section -->
+            <li>
+                <a class="main-link" href="Lab4 wonder Book/lab4.html">Lab 4 Wonder Book</a>
+                <a class="sub-link" href="Lab4 wonder Book/labExerA.html">Lab 4 - Exercise A</a>
+                <a class="sub-link" href="Lab4 wonder Book/LabExerB.html">Lab 4 - Exercise B</a>
+            </li>
+            
+            <!-- Lab 5 Section -->
             <li>
                 <a class="main-link" href="LAB 5/external.html">Lab 5 (External CSS)</a>
                 <a class="sub-link" href="LAB 5/table.html">Lab 5 (Table CSS)</a>
-                <a class="sub-link" href="LAB 5/internal.html">Lab 5 (Internal CSS)</a>
-            </li>
-            
-            <!-- Completely Separate Lab Exercise 5 Section -->
-            <li>
-                <a class="main-link" href="LabExercise5/Food.html">Lab Ex 5 - Food</a>
-                <a class="sub-link" href="LabExercise5/shop.html">Lab Ex 5 - Shop</a>
-                <a class="sub-link" href="LabExercise5/umt.html">Lab Ex 5 - UMT</a>
-            </li>
-</ul>
-    </div>
-</body>
-</html>
+                <a class="
