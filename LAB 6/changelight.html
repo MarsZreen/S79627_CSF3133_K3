@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2>What can JavaScript <index>JavaScript</index> Do?</h2>
+        <p>JavaScript <index>JavaScript</index> can change HTML attributes values.</p>
+        <p>In  this case ,JavaScript <index>JavaScript</index> changesthe value of the 'scr'(source) attributes of an image.</p>
+
+        <!-- Button to turn the light ON -->
+         <button type="button" onclick="document.getElementById('myImage').src='pic_bulbon.gif'">Turn ON the light</button>
+
+         <!-- image tag -->
+         <img id="myImage" src="pic_bulboff.gif" style="width: 100px;">
+
+            <!-- Button to turn the light OFF -->
+            <button type="button" onclick="document.getElementById('myImage').src='pic_bulboff.gif'">Turn OFF the light</button>
+    </body>
+</html>

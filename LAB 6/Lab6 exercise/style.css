@@ -1,0 +1,131 @@
+/* Base page styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f4f6f9;
+    color: #222;
+}
+
+/* Header banner */
+header {
+    background-color: #1b4f72;
+    color: #fff;
+    padding: 20px 24px;
+}
+
+header h1 {
+    margin: 0 0 6px 0;
+}
+
+header p {
+    margin: 0;
+}
+
+/* Section cards */
+.panel {
+    background-color: #fff;
+    max-width: 900px;
+    margin: 16px auto;
+    padding: 18px 22px;
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+/* Buttons with hover effect */
+button {
+    padding: 9px 16px;
+    background-color: #1f78b4;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.95rem;
+}
+
+button:hover {
+    background-color: #155a8a;
+}
+
+input[type="text"] {
+    padding: 8px 10px;
+    margin: 0 8px;
+    border: 1px solid #bbb;
+    border-radius: 4px;
+}
+
+/* Arena layout and fixed-size choice images */
+.arena {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 36px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.arena img {
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 6px;
+    background-color: #fafafa;
+}
+
+.vs-label {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #666;
+}
+
+#result {
+    font-size: 1.15rem;
+    font-weight: bold;
+}
+
+.scoreboard {
+    font-weight: bold;
+}
+
+/* History table styling */
+#history {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+#history th,
+#history td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+#history th {
+    background-color: #1b4f72;
+    color: #fff;
+}
+
+#history tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.actions {
+    margin-top: 16px;
+    display: flex;
+    gap: 10px;
+}
+
+#summaryText {
+    font-weight: bold;
+    margin-top: 12px;
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    padding: 16px;
+    color: #555;
+    font-size: 0.9rem;
+}

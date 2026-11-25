@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSF3133 Quiz Application</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Web Interface Design Quiz</h1>
+        <p>Test your HTML, CSS, and JavaScript knowledge</p>
+    </header>
+
+    <main>
+        <section id="quiz-section">
+            <div id="quiz-meta">
+                <span id="question-counter">Question 1</span>
+                <span id="timer">Time left: 15s</span>
+            </div>
+
+            <h2 id="question-text">Click "Start Quiz" to begin.</h2>
+            <div id="options-container"></div>
+
+            <div id="controls">
+                <button id="start-btn" onclick="startQuiz()">Start Quiz</button>
+                <button id="submit-btn" onclick="checkAnswer()" disabled>Submit Answer</button>
+                <button id="next-btn" onclick="nextQuestion()" disabled>Next Question</button>
+            </div>
+        </section>
+
+        <section id="feedback-section" aria-live="polite">
+            <p id="feedback-text"></p>
+        </section>
+    </main>
+
+    <footer>
+        <p id="score-display">Score: 0</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
